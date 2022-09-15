@@ -18,7 +18,7 @@ export function Modal(poolid, min_amount){
               <div className="modal-dialog modal-dialog-centered" role="document">
               <div className="modal-content">
                   <div className="modal-header">
-                  <h5 className="modal-title" id="exampleModalCenterTitle">Stake Fusion</h5>
+                  <h5 className="modal-title" id="exampleModalCenterTitle">Stake CHARLES III</h5>
                   <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true"> <img height={'auto'} src="/img/ex.svg" alt="" /></span>
                   </button>
@@ -43,7 +43,7 @@ export function Modal(poolid, min_amount){
                                       Amount
                                   </span>
                                   <span>
-                                      Fusion Balance: <span style={{fontWeight:"500"}}>200,000</span>
+                                      CHARLES III Balance: <span style={{fontWeight:"500"}}>200,000</span>
                                   </span>
                               </div>
   
@@ -57,7 +57,7 @@ export function Modal(poolid, min_amount){
                               }}>
                                   <span >20,000 <small>($1000)</small></span>
                                   <input type="text" onChange={(e)=>{ setAmount(e.target.value)}} value={inputAmt} />
-                                  <span >FSN {JSON.stringify(inputAmt)}</span>
+                                  <span >CHARLES III {JSON.stringify(inputAmt)}</span>
                               </div>
   
                               <div className="staking-category d-flec flex-column" style={{padding: "20px", background: "#0E1725", borderRadius: "9.75964px", marginBottom: "32px"}}>
@@ -71,7 +71,7 @@ export function Modal(poolid, min_amount){
                                           <img   height="20px" src="/img/info.png" alt="" />
                                       </span>
                                       </span>
-                                      <span>20,000 FSN ($1,000)</span>
+                                      <span>20,000 CHARLES III ($1,000)</span>
                                   </span>
   
                                   <span className="d-flex flex-wrap  flex-wrap  justify-content-between" style={{marginBottom:"18px"}}>
@@ -125,7 +125,7 @@ export function Modal(poolid, min_amount){
                                           </span>
                                           <span className="text-white" style={{fontWeight: "700",
                                           fontSize: "24px", margin: "0 10px"}}>
-                                              Silver Fusion
+                                              Staking Silver
                                           </span>
                                           <span>
                                               <img height={'auto'}  src="/img/open.png" alt="" />
@@ -139,7 +139,7 @@ export function Modal(poolid, min_amount){
                                       <span className="text-light-grey"> Your Stake</span>
                                       <span> 
                                           <span className="text-white" style={{fonWeight: "700",
-                                          fontSize: "1.5rem"}}>29,302 FUSION</span>
+                                          fontSize: "1.5rem"}}>29,302 CHARLES III</span>
                                           <span className="text-light-grey" style={{fontWeight: "400"}}>$9201</span>
                                       </span>
                                   </div>
@@ -151,7 +151,7 @@ export function Modal(poolid, min_amount){
   
                               <div className="d-flex flex-wrap  flex-wrap  flex-wrap " style={{marginBottom: "32px", fontWeight: "700",
                               fontSize: "36px", background: "#0E1725", borderRadius: "8px", padding: "28px"}}>
-                                  <span className="text-white">2,291 FSN</span>
+                                  <span className="text-white">2,291 CHARLES III</span>
                               </div>
   
                               <div className="d-flex flex-wrap  flex-wrap  flex-wrap ">
