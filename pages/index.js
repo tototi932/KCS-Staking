@@ -355,7 +355,7 @@ export default function Home() {
   
           <section>
               <div className="text-white" style={{marginBottom: "64px"}}>
-                  <h1>Fusion Staking</h1>
+                  <h1>King Charles Spaniel Staking</h1>
                   <p className="text-grey">Earn return on Investment by Depositing and Staking CHARLES III Token</p>
               </div>
   
@@ -379,7 +379,7 @@ export default function Home() {
                   <span className="token d-flex flex-wrap  flex-wrap  flex-wrap  flex-column">
                       <span className="tokenName d-flex flex-wrap  flex-wrap  flex-wrap  flex-row align-items-center justify-content-between">
                           <span className="eclipse" id="eclipse_green"></span>
-                          <span> Total Stakers </span> 
+                          <span> Total Stake </span> 
                       </span>
   
                       <span className="tokenValue">{ !totalStakeHolders? (
@@ -398,7 +398,7 @@ export default function Home() {
                   <span className="token d-flex flex-wrap  flex-wrap  flex-wrap  flex-column">
                       <span className="tokenName d-flex flex-wrap  flex-wrap  flex-wrap  flex-row align-items-center justify-content-between">
                           <span className="eclipse" id="eclipse_green"></span>
-                          <span>Total Fusion Staked </span> 
+                          <span>Total CHARLES III Staked </span> 
                       </span>
                       <span className="tokenValue">
                       {!totalStaked?(
@@ -456,7 +456,7 @@ export default function Home() {
                                 <span>
                                     <span className="text-white" style={{
                                     fontWeight: "700",
-                                    fontSize: "1.5rem"}}>{item?.bal * 1} FUSION</span>
+                                    fontSize: "1.5rem"}}>{item?.bal * 1} CHARLES III</span>
                                     <span className="text-light-grey"></span>
                                 </span>
                             </div>
