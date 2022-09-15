@@ -174,7 +174,7 @@ export const listenForChain = async (prov) => {
 
 }
 
-/force a network switch
+//force a network switch
 export const switchNetwork = async () =>{
   if (typeof window !== "undefined") {
     console.log('it entersheretoo')
