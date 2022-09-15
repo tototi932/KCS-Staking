@@ -36,9 +36,9 @@ export const connectWithWalletConnect = async () => {
   try {
       console.log('started here');
       const provider = new WalletConnectProvider({
-        infuraId: INFURA_ID,
+        infuraId: '1e4cfc42d2f24528a0c76cc451430820',
         rpc: {
-          97: 'https://data-seed-prebsc-1-s1.binance.org:8545'
+          56: 'https://data-seed-prebsc-1-s1.binance.org:8545'
         },
       });     
      
