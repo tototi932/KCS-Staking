@@ -38,7 +38,7 @@ export const connectWithWalletConnect = async () => {
       const provider = new WalletConnectProvider({
         infuraId: '1e4cfc42d2f24528a0c76cc451430820',
         rpc: {
-          56: 'https://data-seed-prebsc-1-s1.binance.org:8545'
+          97: 'https://data-seed-prebsc-1-s1.binance.org:8545'
         },
       });     
      
