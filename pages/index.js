@@ -565,7 +565,7 @@ export default function Home() {
                                       Amount
                                   </span>
                                   <span>
-                                      Fusion Balance: <span style={{fontWeight:"500"}}>{!userBalance?"0":userBalance}</span>
+                                      CHARLES III Balance: <span style={{fontWeight:"500"}}>{!userBalance?"0":userBalance}</span>
                                   </span>
                               </div>
   
