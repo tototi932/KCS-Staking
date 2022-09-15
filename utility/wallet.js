@@ -174,37 +174,6 @@ export const listenForChain = async (prov) => {
 
 }
   
-//force a network switch
-export const switchNetwork = async () =>{
-  if (typeof window !== "undefined") {
-    console.log('it entersheretoo')
-    if (window.ethereum.networkVersion !== CHAIN_ID) {
-      try {
-        await window.ethereum.request({
-          method: 'wallet_switchEthereumChain',
-          params: [{ chainId: ethers.utils.hexlify(CHAIN_ID) }]
-        });
-      } catch (err) {
-          // This error code indicates that the chain has not been added to MetaMask
-        if (err.code === 4902) {
-          console.log(err.message)
-          // await window.ethereum.request({
-          //   method: 'wallet_addEthereumChain',
-          //   params: [
-          //     {
-          //       chainName: 'Polygon Mainnet',
-          //       chainId: ethers.utils.hexlify(CHAIN_ID),
-          //       nativeCurrency: { name: 'MATIC', decimals: 18, symbol: 'MATIC' },
-          //       rpcUrls: ['https://polygon-rpc.com/']
-          //     }
-          //   ]
-          // });
-        }
-      }
-    }
-  }
-}
-
 //get contract from blockchain
 export const getContract = async (prov)=> {
   if(!prov){
@@ -248,11 +217,5 @@ export const getWalletBalance = async (address, prov=null) =>{
   let balance = convertToEther(val);
   return balance;
 }
-
-export const getReason = async ()=> {
-  let provider = await getProvider();
-  return await getRevertReason('0xb9ca162f2d7f600b8cf87f46d419ddabffd031380d7aed673804de7e06a084cf','Testnet','20944870',provider)
-}
-
 
 export default {connectToMetaMask, checkNetwork, connectWithWalletConnect, switchNetwork, getProvider, listenForChain, getContract, getTokenContract, convertToWei, getWalletBalance, convertToEther, CONTRACT_ADDRESS };
