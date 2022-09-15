@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@NewConceptSolutions/contracts/token/BEP20/BEP20.sol";
 
 contract testToken is BEP20{
 
