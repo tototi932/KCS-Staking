@@ -334,10 +334,10 @@ export default function Home() {
                    <a className="nav-link" href="#">Leaderboard</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link disabled" href="#">Buy FSN</a>
+                    <a className="nav-link" href="#">Buy CHARLES III</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link disabled" href="#">Docs</a>
+                    <a className="nav-link" href="https://kingcharlesspaniel.gitbook.io/cavalier-spaniel-inu/">Docs</a>
                   </li>
                 </ul>
                   
@@ -356,21 +356,21 @@ export default function Home() {
           <section>
               <div className="text-white" style={{marginBottom: "64px"}}>
                   <h1>Fusion Staking</h1>
-                  <p className="text-grey">Earn return on investment by depositing and staking Fusion Coin</p>
+                  <p className="text-grey">Earn return on Investment by Depositing and Staking CHARLES III Token</p>
               </div>
   
               <div className="info-wrapper">
                   <div className="portfolio_value d-flex flex-wrap  flex-wrap  flex-wrap  justify-content-between">
                       <span className="value_wrapper d-flex flex-wrap  flex-wrap  flex-wrap  align-items-center">
-                          <span className="p_value_label">Portfolio Value : &nbsp;</span>
+                          <span className="p_value_label">Staking Value : &nbsp;</span>
                           <span className="p_value"> {!walletAccount? 0 :(!userBalance?(
                             <div className="spinner-grow" role="status">
                             </div>
-                          ):userBalance)} FSN</span>
+                          ):userBalance)} CHARLES III</span>
                       </span>
   
                       <button className="btn buy-coin-btn text-white">
-                          Buy Fusion Coin
+                          Buy CHARLES III
                       </button>
                   </div>
               </div>
@@ -479,7 +479,7 @@ export default function Home() {
   
           <section className="staking-pool">
               <h2 className="text-white staking-pool-heading" >
-                  Fusion Staking Pool
+                  King Charles Spaniel Staking Pool
               </h2>
   
               <div className="staking-pool-table-wrapper table-responsive">
@@ -512,7 +512,7 @@ export default function Home() {
                               <span>{pool?.roi}</span>
                           </td>
                           <td>
-                              <span>{pool?.min_deposit} FSN</span>
+                              <span>{pool?.min_deposit} CHARLES III</span>
                           </td>
                           <td>
                               
@@ -589,7 +589,7 @@ export default function Home() {
                                     outline: "none",
                                     color: "#FFF"
                                   }} />
-                                  <span >FSN</span>
+                                  <span >CHARLES III</span>
                               </div>
   
                               <div className="staking-category d-flec flex-column" style={{padding: "20px", background: "#0E1725", borderRadius: "9.75964px", marginBottom: "32px"}}>
@@ -621,7 +621,7 @@ export default function Home() {
   
                                   </div>
                                   <div className="d-flex flex-wrap  flex-wrap  flex-column">
-                                      <span style={{fontWeight: "700", fontSize: "1.1rem"}}>Staking {!warnAmt?0:warnAmt} FSN for {!modalItem?.duration? 0: modalItem?.duration} days</span>
+                                      <span style={{fontWeight: "700", fontSize: "1.1rem"}}>Staking {!warnAmt?0:warnAmt} CHARLES III for {!modalItem?.duration? 0: modalItem?.duration} days</span>
                                       <span style={{color:"#AFBED0", fontWeight: "400"}}>There’s a 20% penalty for premature withdrawal</span>
                                   </div>
                               </div>
@@ -671,7 +671,7 @@ export default function Home() {
                                             <span className="text-light-grey"> Your Stake</span>
                                             <span> 
                                                 <span className="text-white" style={{fonWeight: "700",
-                                                fontSize: "1.5rem"}}>{val?.bal*1} FSN</span>
+                                                fontSize: "1.5rem"}}>{val?.bal*1} CHARLES III</span>
                                             </span>
                                         </div>
                     
@@ -685,7 +685,7 @@ export default function Home() {
                               <div key={`bal`+index} className="d-flex flex-wrap  flex-wrap  flex-wrap " style={{marginBottom: "32px", fontWeight: "700",
                               fontSize: "36px", background: "#0E1725", borderRadius: "8px", padding: "28px"}}>
                                 <img src='/img/logo.png' />
-                                  <span className="text-white" style={{marginLeft: "16px"}}>{val?.reward_bal * 1} FSN</span>
+                                  <span className="text-white" style={{marginLeft: "16px"}}>{val?.reward_bal * 1} CHARLES III</span>
                               </div>
     
                               <div key={`warn`+index} className="notice d-flex " style={{background: "#0E1725", borderRadius: "8px" ,marginBottom: "32px", padding: "18px 33px"}}>
