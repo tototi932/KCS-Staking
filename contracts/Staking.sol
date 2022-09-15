@@ -2,11 +2,11 @@
 
 pragma solidity ^0.8.4;
 
-import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@NewConceptSolutions/contracts/access/Ownable.sol";
+import "@NewConceptSolutions/contracts/token/ERC20/IERC20.sol";
 
 
-contract FusionStaking is Ownable{
+contract KCSStaking is Ownable{
     IERC20 public rewardsToken;// Contract address of reward token
     IERC20 public stakingToken;// Contract address of staking token
 
