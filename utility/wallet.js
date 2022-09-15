@@ -173,6 +173,37 @@ export const listenForChain = async (prov) => {
   }
 
 }
+
+/force a network switch
+export const switchNetwork = async () =>{
+  if (typeof window !== "undefined") {
+    console.log('it entersheretoo')
+    if (window.ethereum.networkVersion !== CHAIN_ID) {
+      try {
+        await window.ethereum.request({
+          method: 'wallet_switchEthereumChain',
+          params: [{ chainId: ethers.utils.hexlify(CHAIN_ID) }]
+        });
+      } catch (err) {
+          // This error code indicates that the chain has not been added to MetaMask
+        if (err.code === 4902) {
+          console.log(err.message)
+          // await window.ethereum.request({
+          //   method: 'wallet_addEthereumChain',
+          //   params: [
+          //     {
+          //       chainName: 'Smart Chain',
+          //       chainId: ethers.utils.hexlify(CHAIN_ID),
+          //       nativeCurrency: { name: 'BNB', decimals: 18, symbol: 'BNB' },
+          //       rpcUrls: ['https://bsc-dataseed.binance.org/']
+          //     }
+          //   ]
+          // });
+        }
+      }
+    }
+  }
+}
   
 //get contract from blockchain
 export const getContract = async (prov)=> {
