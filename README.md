@@ -1,1 +1,1 @@
-Staking Plataform of King Charles Spaniel
+Staking Platform of King Charles Spaniel
