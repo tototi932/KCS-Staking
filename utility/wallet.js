@@ -20,7 +20,7 @@ let currentAccount = null;
 
 //Get provider 
 export const getProvider = async () => {
-    if (typeof window !== "") {
+    if (typeof window !== "undefined") {
       let { ethereum } = window; 
       if(ethereum){
         let provider = await detectEthereumProvider();
